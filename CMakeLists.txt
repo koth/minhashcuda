@@ -17,7 +17,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -Wall -Werror -DCUDA_ARCH=
 if (DEBUGINFO)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 endif()
-set(SOURCE_FILES minhashcuda.cc minhashcuda.h wrappers.h private.h kernel.cu)
+set(SOURCE_FILES minhashcuda.cc minhashcuda.h wrappers.h private.h kernel.cu.cc)
 if (NOT DISABLE_PYTHON)
   list(APPEND SOURCE_FILES python.cc)
 endif()
