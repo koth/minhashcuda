@@ -4,6 +4,7 @@
 #include <cuda_runtime_api.h>
 #include <memory>
 #include <vector>
+#include <functional>
 
 template <typename T>
 using unique_devptr_parent = std::unique_ptr<T, std::function<void(T*)>>;
